@@ -62,4 +62,3 @@ window.addEventListener('load', obtenerPokeRival);
 btnElegir.addEventListener('click', obtenerPokePropio);
 btnPelear.addEventListener('click', combate);
 
-
