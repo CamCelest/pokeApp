@@ -1,20 +1,47 @@
-.arena{
-    display: flex;
+.arena {
+    position: relative;
+    width: 46%;
     height: 300px;
     background-image: url('./fondo.png');
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
 }
-#poke{
-    height: 150px;
-    position: fixed;
-    top:240px;
-    left: 100px
-}
-#poke2{
-    height: 158px;
-    position: fixed;
-    top: 158px;
-    left: 300px;
 
+#poke {
+    height: 150px;
+    position: absolute;
+    top: 80%;
+    left: 10%;
+    transform: translateY(-50%);
+}
+
+#poke2 {
+    height: 150px;
+    position: absolute;
+    top: 40%;
+    right: 10%;
+    transform: translateY(-50%);
+}
+
+.fireball {
+    position: absolute;
+    width: 90px;
+    height: 100px;
+    background: url('fireball.png') no-repeat center center;
+    background-size: cover;
+    display: none; /* Oculta la bola de fuego */
+    z-index: 10; /* Bola de fuego encima de los Pokémon */
+}
+
+@keyframes fireballMove {
+    0% {
+        left: 10%;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    100% {
+        left: 90%;
+        top: 50%;
+        transform: translateY(-50%);
+    }
 }
