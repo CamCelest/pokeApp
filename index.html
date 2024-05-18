@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,30 +8,31 @@
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </head>
 <body>
-    
     <div class="stats" id="poke-rival">
         <h3 id="nombrePoke-rival"></h3>
         <p id="tipoRival"></p>
         <p>Ataque: <span id="ataqueRival"></span></p>
+        <p>Movimientos: <span id="movimientosRival"></span></p>
     </div>
 
     <div class="arena">
-        <img id="poke2" src="" alt="">
-        <img id="poke" src="" alt="">
+        <img id="poke2" src="" alt="Pokémon rival">
+        <img id="poke" src="" alt="Pokémon propio">
+        <div class="fireball" id="fireball"></div> 
     </div>
 
     <div class="stats" id="poke-propio">
         <h3 id="nombrePoke-propio"></h3>
         <p id="tipoPropio"></p>
         <p>Ataque: <span id="ataquePropio"></span></p>
+        <p>Movimientos: <span id="movimientosPropio"></span></p>
     </div>
 
     <div>
-        <input id= "input" max="999" type="number">
+        <input id="input" max="999" type="number">
         <button id="btn-poke">Elegir pokemon</button>
         <button id="combate">Ataque</button>
     </div>
-
 
     <script src="./app.js"></script>
 </body>
